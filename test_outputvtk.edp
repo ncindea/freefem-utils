@@ -1,0 +1,10 @@
+// test of outputvtk.idp
+// 04/09/2015, NC
+
+include "outputvtk.idp"
+
+mesh Th = square(50);
+func f = x^2 + y^2;
+fespace Vh(Th, P1);
+Vh u = f;
+//scalar2vtk(Th, u[], "afunction", "example.vtk");

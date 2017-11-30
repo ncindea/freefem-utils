@@ -1,0 +1,12 @@
+// test for outputvtk.idp
+// 04/09/2015, NC
+
+include "outputvtk.idp"
+
+mesh Th = square(20, 10);
+func f = x^2 + y^2;
+func g = sin(pi * x);
+fespace Vh(Th, P1);
+Vh u = f, v= g;
+scalar2vtk(Th, u[], "an_example", "example.vtk");
+vector2vtk(Th, u[], v[], "vector_example", "examplevec.vtk");

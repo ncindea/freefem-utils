@@ -1,0 +1,8 @@
+// a test for give_filename
+// 02/07/2015, NC
+
+include "giveFileName.idp"
+
+string name = giveFileName("./img/al", 5, 199, ".png");
+
+cout << name << endl;
