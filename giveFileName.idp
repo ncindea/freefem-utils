@@ -1,6 +1,4 @@
 // a function to create a filename
-// 02/07/2015, NC
-
 func string giveFileName(string base, int digits, int n, string ext){
     string name;
     name = base;
